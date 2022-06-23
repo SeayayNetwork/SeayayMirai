@@ -3,33 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <title>Coming Soon</title>
-        <style>
-            input {
-                width: 40px;
-                height: 20px;
-            }
-            #remainTime{
-                background-color: yellow;
-                margin-top: 30px;
-                font-size: 40px;
-                text-align: center;
-
-            }
-            #remainTime span {
-                color: red;
-                font-weight: bold;
-                margin-right: 10px;
-            }
-        </style>
+        <link rel="stylesheet" type="text/css" href="https://seayay.icu/index.css">
 </head>
 <body>
-    <div id="remainTime">
-        倒计时：
-        <span id="one"></span>天
-        <span id="two"></span>时
-        <span id="three"></span>分
-        <span id="four"></span>秒
-    </div>
+	<script src="https://cdn.jsdelivr.net/gh/stevenjoezhang/live2d-widget@latest/autoload.js"></script>
+	<script src="/snow.js"></script>
+	<div id="cursor"></div>
+	<div id="cursor-border"></div>
+	<input type="button" value="<span id="one">" data-cursor="pointer
+	<script src="/index.js"></script>
 </body>
 <script>
         (function show() {      
@@ -37,7 +19,7 @@
             var oYear = 2022
             var oMonth = 6
             var oDay = 27
-            var oHour = 12
+            var oHour = 0
             var oMinute = 0
             var oSecond = 0
             var funtureDate = new Date(oYear, oMonth, oDay, oHour, oMinute, oSecond);
